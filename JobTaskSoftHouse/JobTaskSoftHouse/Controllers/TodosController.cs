@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -7,6 +8,8 @@ using JobTaskSoftHouse.Models;
 using JobTaskSoftHouse.Util;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace JobTaskSoftHouse.Controllers
 {
@@ -15,15 +18,14 @@ namespace JobTaskSoftHouse.Controllers
 
         WebAPIHelper todosService = new WebAPIHelper("https://jsonplaceholder.typicode.com/todos", "todos");
         // GET: Todos
+      
         public async Task<ActionResult> Index()
         {
-
-            HttpResponseMessage response = todosService.GetResponse();
             List<Todo> todos = new List<Todo>();
-
-            if (response.IsSuccessStatusCode)
+            using (StreamReader r = new StreamReader("file.json"))
             {
-                todos = response.Content.ReadAsAsync<List<Todo>>().Result;
+                string json = r.ReadToEnd();
+                todos = JsonConvert.DeserializeObject<List<Todo>>(json);
             }
 
             return View(todos);
