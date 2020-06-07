@@ -8,6 +8,7 @@ using JobTaskSoftHouse.Models;
 using System.Net.Http;
 using JobTaskSoftHouse.Util;
 using Newtonsoft.Json;
+using System.IO;
 
 namespace JobTaskSoftHouse.Controllers
 {
@@ -26,7 +27,7 @@ namespace JobTaskSoftHouse.Controllers
             HttpResponseMessage response = todosService.GetResponse();
             string json;
 
-            if (response.IsSuccessStatusCode)
+            if (response.IsSuccessStatusCode && new FileInfo("file.json").Length == 0)
             {
                 json = JsonConvert.SerializeObject(response.Content.ReadAsAsync<List<Todo>>().Result);
                 System.IO.File.WriteAllText("file.json", json);

@@ -2,10 +2,10 @@ C:\Users\110\Desktop\Job task Softhouse\JobTaskSoftHouse\JobTaskSoftHouse\bin\De
 C:\Users\110\Desktop\Job task Softhouse\JobTaskSoftHouse\JobTaskSoftHouse\bin\Debug\netcoreapp2.0\JobTaskSoftHouse.runtimeconfig.json
 C:\Users\110\Desktop\Job task Softhouse\JobTaskSoftHouse\JobTaskSoftHouse\bin\Debug\netcoreapp2.0\JobTaskSoftHouse.runtimeconfig.dev.json
 C:\Users\110\Desktop\Job task Softhouse\JobTaskSoftHouse\JobTaskSoftHouse\bin\Debug\netcoreapp2.0\JobTaskSoftHouse.dll
-C:\Users\110\Desktop\Job task Softhouse\JobTaskSoftHouse\JobTaskSoftHouse\obj\Debug\netcoreapp2.0\JobTaskSoftHouse.csprojAssemblyReference.cache
 C:\Users\110\Desktop\Job task Softhouse\JobTaskSoftHouse\JobTaskSoftHouse\obj\Debug\netcoreapp2.0\JobTaskSoftHouse.csproj.CoreCompileInputs.cache
 C:\Users\110\Desktop\Job task Softhouse\JobTaskSoftHouse\JobTaskSoftHouse\obj\Debug\netcoreapp2.0\JobTaskSoftHouse.AssemblyInfoInputs.cache
 C:\Users\110\Desktop\Job task Softhouse\JobTaskSoftHouse\JobTaskSoftHouse\obj\Debug\netcoreapp2.0\JobTaskSoftHouse.AssemblyInfo.cs
 C:\Users\110\Desktop\Job task Softhouse\JobTaskSoftHouse\JobTaskSoftHouse\bin\Debug\netcoreapp2.0\JobTaskSoftHouse.pdb
 C:\Users\110\Desktop\Job task Softhouse\JobTaskSoftHouse\JobTaskSoftHouse\obj\Debug\netcoreapp2.0\JobTaskSoftHouse.dll
 C:\Users\110\Desktop\Job task Softhouse\JobTaskSoftHouse\JobTaskSoftHouse\obj\Debug\netcoreapp2.0\JobTaskSoftHouse.pdb
+C:\Users\110\Desktop\Job task Softhouse\JobTaskSoftHouse\JobTaskSoftHouse\obj\Debug\netcoreapp2.0\JobTaskSoftHouse.csprojAssemblyReference.cache

@@ -18,17 +18,23 @@ namespace JobTaskSoftHouse.Controllers
 
         WebAPIHelper todosService = new WebAPIHelper("https://jsonplaceholder.typicode.com/todos", "todos");
         // GET: Todos
-      
-        public async Task<ActionResult> Index()
+
+        List<Todo> todos = new List<Todo>();
+
+        public ActionResult Index()
         {
-            List<Todo> todos = new List<Todo>();
+            return View();
+        }
+
+        public List<Todo> GetAll()
+        {
             using (StreamReader r = new StreamReader("file.json"))
             {
                 string json = r.ReadToEnd();
                 todos = JsonConvert.DeserializeObject<List<Todo>>(json);
             }
 
-            return View(todos);
+            return todos;
         }
 
         // GET: Todos/Details/5
